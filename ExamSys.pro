@@ -36,8 +36,6 @@ FORMS += \
     logindialog.ui
 
 DISTFILES += \
-    ../../File/2163109727/FileRecv/第5卷 Qt/第5卷 Qt/第5卷-qt项目1/login.png \
-    ../../File/2163109727/FileRecv/第5卷 Qt/第5卷 Qt/第5卷-qt项目1/login.png \
     account.txt \
     exam.txt
 

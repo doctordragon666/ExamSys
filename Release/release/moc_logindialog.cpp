@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'logindialog.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.6)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.12)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'logindialog.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.9.6. It"
+#error "This file was generated using the moc from 5.12.12. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -45,7 +45,7 @@ QT_MOC_LITERAL(3, 33, 20) // "on_cancelBtn_clicked"
 static const uint qt_meta_data_LoginDialog[] = {
 
  // content:
-       7,       // revision
+       8,       // revision
        0,       // classname
        0,    0, // classinfo
        2,   14, // methods
@@ -69,7 +69,7 @@ static const uint qt_meta_data_LoginDialog[] = {
 void LoginDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        LoginDialog *_t = static_cast<LoginDialog *>(_o);
+        auto *_t = static_cast<LoginDialog *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->on_loginBtn_clicked(); break;
@@ -80,10 +80,14 @@ void LoginDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     Q_UNUSED(_a);
 }
 
-const QMetaObject LoginDialog::staticMetaObject = {
-    { &QDialog::staticMetaObject, qt_meta_stringdata_LoginDialog.data,
-      qt_meta_data_LoginDialog,  qt_static_metacall, nullptr, nullptr}
-};
+QT_INIT_METAOBJECT const QMetaObject LoginDialog::staticMetaObject = { {
+    &QDialog::staticMetaObject,
+    qt_meta_stringdata_LoginDialog.data,
+    qt_meta_data_LoginDialog,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
 
 
 const QMetaObject *LoginDialog::metaObject() const
