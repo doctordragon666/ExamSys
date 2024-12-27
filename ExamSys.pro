@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui  #当前项目支持的核心图形用户界面扩展库
-RC_ICONS += login.ico
+RC_ICONS += res/login.ico
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = ExamSys
@@ -34,10 +34,6 @@ HEADERS += \
 
 FORMS += \
     logindialog.ui
-
-DISTFILES += \
-    account.txt \
-    exam.txt
 
 RESOURCES += \
     image.qrc

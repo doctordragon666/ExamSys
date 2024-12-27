@@ -26,13 +26,16 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image:url(:/login.png);</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>login.png</pixmap>
+    <pixmap resource="image.qrc">:/res/login.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QPushButton" name="loginBtn">
@@ -111,6 +114,8 @@
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
  <connections/>
 </ui>

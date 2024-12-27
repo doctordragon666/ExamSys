@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>login.png</file>
-        <file>login.ico</file>
+        <file>res/login.png</file>
     </qresource>
 </RCC>
