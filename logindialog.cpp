@@ -10,10 +10,12 @@ LoginDialog::LoginDialog(QWidget* parent) :
 {
     ui->setupUi(this);
 
-    //设置图片填充
+//    设置图片填充
+    QPixmap p(":/res/login.png");
+    ui->imgLabel->setPixmap(p);
     ui->imgLabel->setScaledContents(true);
 
-    //重置长宽高
+//    重置长宽高
     resize(ui->imgLabel->width(), ui->imgLabel->height());
 
     setWindowTitle("驾考登录");
@@ -40,7 +42,7 @@ void LoginDialog::on_loginBtn_clicked()
         ui->accountEdit->setFocus();
         return;
     }
-    QString filename = "../account.txt";
+    QString filename = "res/account.txt";
     QString strAccInput = ui->accountEdit->text();
     QString strCode = ui->codeEdit->text();
     QStringList strList;
@@ -66,16 +68,13 @@ void LoginDialog::on_loginBtn_clicked()
                     ui->accountEdit->clear();
                     ui->codeEdit->clear();
                     ui->accountEdit->setFocus();
-                    file.close();
-                    return;
+                    goto fail;
                 }
             }
 
         }
         QMessageBox::information(this, "提示", "账号不存在");
         goto fail;
-        file.close();
-        return;
     }
     QMessageBox::information(this, "提示", "账号文件不存在");
     fail:

@@ -107,7 +107,7 @@ bool ExamDialog::initTextEdit()
 {
     QString strLine;//文件的每一行
     QStringList strList;//文件内容
-    QString filename("../exam.txt");
+    QString filename("res/exam.txt");
     QFile file(filename);
     QTextStream stream(&file);
     stream.setCodec("utf-8");//设置编码格式utf-8

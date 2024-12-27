@@ -31,9 +31,6 @@
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
-    <pixmap resource="image.qrc">:/res/login.png</pixmap>
-   </property>
    <property name="scaledContents">
     <bool>false</bool>
    </property>
@@ -114,8 +111,6 @@
    </property>
   </widget>
  </widget>
- <resources>
-  <include location="image.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
